@@ -8,7 +8,7 @@ public class Palindrome {
 		
 		int left = 0;
 		int right = input.length() - 1;
-		//loop the input by increment 1 from left and also increment 1 from right
+		//loop the input by increment 1 from left and also decrement 1 from right
 		while(left < right) {
 			//check the equality of the character
 			if(input.charAt(left) != input.charAt(right)) {
@@ -16,9 +16,9 @@ public class Palindrome {
 				break;
 			}
 			left++;
-			right++;
+			right--;
 		}
-		System.out.println(isPalindrome);
+		System.out.println("The Palindrome of the input \"" + input + "\" is : " +isPalindrome);
 	}
 
 }
