@@ -6,7 +6,7 @@ public class Recursion {
 		if(k > 0)
 			return k + sum(k-1);
 		else
-			return 0;
+			return 0; // halting condition k becomes 0
 	}
 	public static void main(String[] args) {
 		int result = sum(10);
